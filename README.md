@@ -213,6 +213,10 @@ fuller model is in [Defence Architecture](docs/04-defence-architecture.md).
   auto-formalisation and Dafny verification of agent-produced code against
   frozen safety specifications. Guarantees depend on specification coverage
   and faithful API mapping; verification does not ensure task success.
+- [ToolFence](https://arxiv.org/abs/2609.37196) - Research on
+  provenance-aware, argument-level authorisation for agent tool calls, enforced
+  by a deterministic monitor outside the model. Evaluated on AgentDojo without
+  adaptive attacks; no code is released.
 - [Tools catalogue](resources/tools.md) - Defensive tools for red teaming,
   evaluation, observability, inventory, and runtime control.
 
