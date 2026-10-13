@@ -162,4 +162,15 @@ Each entry uses the repository metadata format: resource type, producer, source,
 - Last checked: 2026-10-03.
 - Limitations or caveats: The main variant relies on an attacker-operated endpoint that re-inserts the payload; endpoint-free propagation degrades. Results are limited to the evaluated models and synthetic world designs. Effective payloads are withheld, so attack-side results cannot be fully reproduced from public artefacts. The repository does not state a licence. See the [resource scoresheet](../rubrics/scoresheets/resource-share-borne-ai-virus.md).
 
+### ToolFence: Fine-Grained Authorization For Secure Tool-Using LLM Agents
+
+- Resource type: Research preprint.
+- Producer or publisher: Li et al. (Hong Kong Polytechnic University and Shandong University), arXiv.
+- Source link: <https://arxiv.org/abs/2609.37196>.
+- Relevance to agentic execution security: Moves tool-call authorisation outside the model by compiling the user request into a typed capability blueprint, tracking argument provenance, and enforcing it with a deterministic monitor before execution.
+- Coverage: Indirect prompt injection, argument-level authorisation, provenance constraints, cross-tool escalation versus within-tool hijacking, deterministic enforcement, and judge-granted capability extension.
+- Evidence quality and maturity level: Emerging research evaluated on 629 AgentDojo injection-task pairs with three backbone models and six baselines; results are author-reported and code is not released.
+- Last checked: 2026-10-03.
+- Limitations or caveats: No adaptive-attacker evaluation. Utility drops when legitimate authority-sensitive values exist only in untrusted sources, and attacks can succeed when the model selects among several authorised values; the authors suggest selective human confirmation. See the [resource scoresheet](../rubrics/scoresheets/resource-toolfence.md).
+
 <!-- markdownlint-enable MD013 -->
