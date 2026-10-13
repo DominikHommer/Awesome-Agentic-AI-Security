@@ -232,6 +232,10 @@ fuller model is in [Defence Architecture](docs/04-defence-architecture.md).
   - Defensive chain stub for modelling malicious or misleading retrieved content.
 - [Memory Poisoning](docs/agentic-attack-chains/memory-poisoning.md) - Defensive
   chain stub for persistent state manipulation and delayed effects.
+- [Share-Borne AI Virus](https://arxiv.org/abs/2609.35576) - Research on
+  artefact-mediated propagation, where injected content persists in one
+  assistant's memory and spreads to other assistants through shared documents.
+  Evaluated in simulated multi-agent worlds; effective payloads are withheld.
 
 ## Credentials, Identity, and Delegated Authority
 
